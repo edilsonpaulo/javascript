@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos em DOM</title>
+</head>
+<style>
+    body{
+        background-color:rgb(5, 31, 57);
+
+    }
+
+    div#btn{
+        margin: 100px auto;
+        background: green;
+        color: #fff;
+        font: bold 1em verdana;
+        width: 250px;
+        height: 70px;
+        line-height: 40px;
+        padding: 4px;
+        text-align: center;
+        border: 1px solid #fff;
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <div id="btn">
+        <!-- onclick="clicar()" onmousemove="entrar()" onmouseout="sair()" vc pode utilizar o eventos apartir do proprio elemnto ou dentro do script que e mais pratico. -->
+        <p id="texto">Interaja</p>
+    </div>
+
+    <script>
+        var a = document.getElementById('btn');
+        var texto = document.getElementById('texto');
+
+
+        a.addEventListener('click', clicar);
+        a.addEventListener('mousemove', entrar);
+        a.addEventListener('mouseout', sair);
+        
+        function clicar(){
+            texto.innerText = "Clicou!"
+            a.style.background = "red"
+        }
+
+        function entrar(){
+            texto.innerText = "Entrou!"
+        }
+
+        function sair(){
+            texto.innerText = "Saiu!"
+            a.style.background = "green"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando</title>
+</head>
+<body>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome">
+    <br>
+    <br>
+    <label for="pais">Seu País:</label>
+    <input type="text" id="pais">
+    <input type="button" value="Iniciar" onclick="inicar()">
+    <p id="res">
+
+    </p>
+
+    <script>
+        function inicar(){
+
+            var inputNome = document.getElementById('nome');
+            var inputPais = document.getElementById('pais');
+            var resText = document.getElementById('res');
+
+            resText.innerHTML = `Seu nome é ${inputNome.value}`
+
+            if(inputPais == "Angola"){
+               resText.innerHTML += ` e você é angolano`
+            }else{
+                resText.innerHTML += ` e você é estrageiro`
+            }
+        }
+    </script>
+</body>
+</html>

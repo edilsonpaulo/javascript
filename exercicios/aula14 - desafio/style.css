@@ -1,0 +1,53 @@
+body{
+    background-color: #222;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+}
+
+section{
+    max-width: 500px;
+    height: 300px;
+    margin: auto;
+    background-color: #fff;
+    color: #222;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#msg{
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* position: absolute;
+    
+    left: 60px;
+    top: 100px; */
+}
+
+#content{
+    /* background-color: blue; */
+    width: 300px;
+    position: absolute;
+    top: 30%;
+    z-index: 2;
+    color: #fff;
+    text-align: left;
+    padding: 0 20px;
+    line-height: 1.5em;
+    /* box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.427); */
+}
+
+#citacao{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#foto{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+img{
+    width: 100%;
+}

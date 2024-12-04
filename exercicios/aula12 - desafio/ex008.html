@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+</head>
+<body>
+  <h1>Sistema de multa</h1>
+  <label>Velocidade do carro</label>
+  <input type="number" id="txtv">
+  <input type="button" value="Verificar" id="check" onclick="verificar()">
+  <div id="res">
+
+  </div>
+
+  <script>
+    function verificar(){
+        var txtv = document.getElementById('txtv');
+        var vel = Number(txtv.value);
+        var res = document.querySelector('div#res');
+
+        if(vel > 62){
+            res.innerHTML = 'Você foi MULTADO!';
+        }else{
+
+            res.innerHTML = "Ande sempre com cinto de segurança!"
+        }
+       
+
+    }
+  </script>
+</body>
+</html>
