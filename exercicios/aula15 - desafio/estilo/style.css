@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: darkcyan;
+    
+}
+
+header, footer{
+    text-align: center;
+    padding: 10px;
+}
+
+section{
+    width: 90vw;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+#imagem{
+    width: 170px;
+    display: block;
+    margin: auto;
+}
+label {
+
+}

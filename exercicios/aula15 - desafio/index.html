@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header>
+        <h1>Insira seus dados</h1>
+    </header>
+    <section>
+            <div >
+          <p>
+            <label for="iano">Ano que você nasceu:</label>
+            <input type="number" name="ano" id="iano">
+          </p>
+          <p>
+            <label for="isex">Sexo:</label>
+          </p>
+          <p>
+            <input type="radio" name="sexo" id="mas" checked>
+            <label for="mas">Masculino</label> <br>
+            <input type="radio" name="sexo" id="fem" checked>
+            <label for="fem">Feminino</label>
+          </p>
+          <p>
+            <input type="button" value="Verificar" onclick="calcular()">
+          </p>
+        </div> 
+        <div id="res">
+            <p>Preenche os dados para ver o resultado</p>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 Edilson Paulo</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
